@@ -12,7 +12,7 @@ Foo.prototype.b = 7
 Foo.prototype.c = 8
 var foo = new Foo();
 
-console.log(Foo.prototype, foo, foo.__proto__ == Foo.prototype)
+console.log(Foo.prototype, foo, foo.__proto__ == Foo.prototype, foo.__proto__.prototype)
 console.log(foo.a)
 console.log(foo.b)
 console.log(foo.c)
