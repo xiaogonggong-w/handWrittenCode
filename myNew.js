@@ -5,6 +5,7 @@ function Foo(){
         b:5,
     }
 }
+// 可以尝试把返回的对象注释掉
 
 
 Foo.prototype.a = 6
@@ -12,7 +13,7 @@ Foo.prototype.b = 7
 Foo.prototype.c = 8
 var foo = new Foo();
 
-console.log(Foo.prototype, foo, foo.__proto__ == Foo.prototype, foo.__proto__.prototype)
+console.log(Foo.prototype, foo, foo.__proto__ == Foo.prototype, foo.__proto__.prototype, Foo.prototype.__proto__ === Function.prototype)
 console.log(foo.a)
 console.log(foo.b)
 console.log(foo.c)
